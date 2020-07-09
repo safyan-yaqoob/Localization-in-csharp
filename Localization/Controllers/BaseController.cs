@@ -26,6 +26,7 @@ namespace Localization.Controllers
 
             CultureHelper.Culture = culture;
 
+
             base.ExecuteCore();
         }
         protected override bool DisableAsyncSupport
