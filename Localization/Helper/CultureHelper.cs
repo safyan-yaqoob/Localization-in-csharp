@@ -41,7 +41,7 @@ namespace Localization.Helper
                 {
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
                 }
-                if (value == 1)
+                else if (value == 1)
                 {
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar-SA");
                 }

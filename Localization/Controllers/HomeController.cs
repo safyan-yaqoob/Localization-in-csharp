@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Localization.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
@@ -18,6 +18,10 @@ namespace Localization.Controllers
         public ActionResult ChangeCurrentCulture(int id)
         {
             CultureHelper.Culture = id;
+
+            Session["CurrentCulture"] = id;
+
+            return Redirect(Request.UrlReferrer.ToString());
         }
     }
 }

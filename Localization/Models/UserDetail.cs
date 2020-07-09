@@ -5,10 +5,10 @@ namespace MvcLocalization.Models
 {
     public class UserDetail
     {
-        [Display(Name ="First Name",ResourceType =typeof(Resource))]
+        [Display(Name = "FirstName", ResourceType = typeof(Resource))]
         public string FirstName { get; set; }
 
-        [Display(Name = "Last Name", ResourceType = typeof(Resource))]
+        [Display(Name = "LastName", ResourceType = typeof(Resource))]
         public string LastName { get; set; }
     }
 }
